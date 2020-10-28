@@ -24,7 +24,13 @@ public class Tester {
     System.out.println(A.equals(B));
     System.out.println(B.equals(A));
     System.out.println(rightTri.getPerimeter());
+    System.out.println(equTri.getPerimeter());
+    System.out.println(isoTri.getPerimeter());
     System.out.println(line.getPerimeter());
+    System.out.println(rightTri.getArea());
+    System.out.println(equTri.getArea());
+    System.out.println(isoTri.getArea());
+    System.out.println(line.getArea());
     System.out.println(rightTri.classify());
     System.out.println(equTri.classify());
     System.out.println(isoTri.classify());

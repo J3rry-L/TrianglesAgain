@@ -16,6 +16,14 @@ public class Triangle{
     return(v1.distanceTo(v2) + v2.distanceTo(v3) + v3.distanceTo(v1));
   }
 
+  public double getArea(){
+    double a = v1.distanceTo(v2);
+    double b = v2.distanceTo(v3);
+    double c = v3.distanceTo(v1);
+    double s = (a + b + c) / 2;
+    return(Math.sqrt(s * (s - a) * (s - b) * (s - c)));
+  }
+
   public String classify(){
     double a = (double) Math.round(v1.distanceTo(v2) * 10000) / 10000;
     double b = (double) Math.round(v2.distanceTo(v3) * 10000) / 10000;
