@@ -8,6 +8,7 @@ public class Tester {
     Triangle equTri = new Triangle(-1,0,0,Math.sqrt(3),1,0);
     Triangle isoTri = new Triangle(-1,0,0,2,1,0);
     Triangle line = new Triangle(0,1,5,13,10,25);
+    Triangle testTri = new Triangle(0,1,5,13,10,25);
     System.out.println(A.getX());
     System.out.println(A.getY());
     System.out.println(B.getX());
@@ -32,5 +33,11 @@ public class Tester {
     System.out.println(equTri);
     System.out.println(isoTri);
     System.out.println(line);
+    testTri.setVertex(0,A);
+    System.out.println(testTri);
+    testTri.setVertex(1,B);
+    System.out.println(testTri);
+    testTri.setVertex(2,C);
+    System.out.println(testTri);
   }
 }

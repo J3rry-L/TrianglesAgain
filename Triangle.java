@@ -33,4 +33,16 @@ public class Triangle{
     return("v1" + v1.toString() + " v2" + v2.toString() + " v3" + v3.toString());
   }
 
+  public void setVertex(int index, Point newP) {
+    if (index == 0){
+      v1 = newP;
+    }
+    if (index == 1){
+      v2 = newP;
+    }
+    if (index == 2){
+      v3 = newP;
+    }
+  }
+
 }
