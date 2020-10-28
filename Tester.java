@@ -28,5 +28,9 @@ public class Tester {
     System.out.println(equTri.classify());
     System.out.println(isoTri.classify());
     System.out.println(line.classify());
+    System.out.println(rightTri);
+    System.out.println(equTri);
+    System.out.println(isoTri);
+    System.out.println(line);
   }
 }
