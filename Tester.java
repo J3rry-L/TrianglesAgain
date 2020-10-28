@@ -4,7 +4,9 @@ public class Tester {
     Point B = new Point(7.1, 10.3);
     Point C = new Point(7.1,2.3);
     Point D = new Point(A);
-    Triangle rightTri1 = new Triangle(A,B,C);
+    Triangle rightTri = new Triangle(A,B,C);
+    Triangle equTri = new Triangle(-1,0,0,Math.sqrt(3),1,0);
+    Triangle isoTri = new Triangle(-1,0,0,2,1,0);
     Triangle line = new Triangle(0,1,5,13,10,25);
     System.out.println(A.getX());
     System.out.println(A.getY());
@@ -20,7 +22,11 @@ public class Tester {
     System.out.println(A.distanceTo(D));
     System.out.println(A.equals(B));
     System.out.println(B.equals(A));
-    System.out.println(rightTri1.getPerimeter());
+    System.out.println(rightTri.getPerimeter());
     System.out.println(line.getPerimeter());
+    System.out.println(rightTri.classify());
+    System.out.println(equTri.classify());
+    System.out.println(isoTri.classify());
+    System.out.println(line.classify());
   }
 }
