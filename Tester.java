@@ -5,7 +5,7 @@ public class Tester {
     Point C = new Point(7.1,2.3);
     Point D = new Point(A);
     Triangle rightTri1 = new Triangle(A,B,C);
-    Triangle randomTri1 = new Triangle(1.2,2.3,3.5,5.7,6.9,10.0);
+    Triangle line = new Triangle(0,1,5,13,10,25);
     System.out.println(A.getX());
     System.out.println(A.getY());
     System.out.println(B.getX());
@@ -20,6 +20,7 @@ public class Tester {
     System.out.println(A.distanceTo(D));
     System.out.println(A.equals(B));
     System.out.println(B.equals(A));
-
+    System.out.println(rightTri1.getPerimeter());
+    System.out.println(line.getPerimeter());
   }
 }
