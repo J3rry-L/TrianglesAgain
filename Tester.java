@@ -5,6 +5,7 @@ public class Tester {
     Point C = new Point(7.1,2.3);
     Point D = new Point(A);
     Triangle rightTri1 = new Triangle(A,B,C);
+    Triangle randomTri1 = new Triangle(1.2,2.3,3.5,5.7,6.9,10.0);
     System.out.println(A.getX());
     System.out.println(A.getY());
     System.out.println(B.getX());
